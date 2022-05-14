@@ -151,22 +151,22 @@
                 <!-- Topping Checkbox - DILL PICKLE -->
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <span class="mdl-checkbox__label">Dill Pickle</span>
-                  <input type="checkbox" id="dill-pickle" name="topping" class="mdl-checkbox__input"><br><br>
+                  <input type="checkbox" id="dill-pickle" name="dill-pickle" class="mdl-checkbox__input"><br><br>
                 </label>&emsp;
                 <!-- Topping Checkbox - KETCHUP -->
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <span class="mdl-checkbox__label">Ketchup</span>
-                  <input type="checkbox" id="ketchup" name="topping" class="mdl-checkbox__input"><br><br>
+                  <input type="checkbox" id="ketchup" name="ketchup" class="mdl-checkbox__input"><br><br>
                 </label>&emsp;
                 <!-- Topping Checkbox - ALL DRESSED -->
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <span class="mdl-checkbox__label">All Dressed</span>
-                  <input type="checkbox" id="all-dressed" name="topping" class="mdl-checkbox__input"><br><br>
+                  <input type="checkbox" id="all-dressed" name="all-dressed" class="mdl-checkbox__input"><br><br>
                 </label>&emsp;
                 <!-- Topping Checkbox - SWEET & SALTY -->
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                   <span class="mdl-checkbox__label">Sweet & Salty</span>
-                  <input type="checkbox" id="sweet-and-salty" name="topping" class="mdl-checkbox__input"><br><br>
+                  <input type="checkbox" id="sweet-and-salty" name="sweet-and-salty" class="mdl-checkbox__input"><br><br>
                 </label>&emsp;
               </td>
             </tr>
@@ -276,7 +276,7 @@
 
               // If user selected any flavoured popcorn option
               if ($flavour == "Cheesy Dill" or $flavour == "Jalapeno Jack" or $flavour == "Salt and Vinegar"
-                  or $flavour == "Buttersalt" or $flavour == "Whalin' White Cheese") {
+                  or $flavour == "Buttersalt" or $flavour == "White Cheese") {
                 $flavourCost = FLAVOURED_POPCORN_COST;
                 // If the user chose the plain popcorn flavour
               } else {
