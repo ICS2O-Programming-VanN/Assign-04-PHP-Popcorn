@@ -29,6 +29,7 @@
       </header>
       <center>
         <?php
+          // Image
           echo '<img src="./images/kernels-popcorn.jpg" class="popcorn" alt="KERNELS Popcorn">';
         ?>
         <!-- Paragraph stating how ordering works -->
@@ -41,6 +42,7 @@
         <!-- Table which displays the menu and cost of items -->
         <table class="table">
           <tr class="menu">
+            <!-- Table heading -->
             <th class="menu">Menu</th>
             <th class="menu">Price</th>
           </tr>
@@ -101,10 +103,12 @@
             <td class="menu">$15.99</td>
           </tr>
         </table>
+        
         <?php
+          // Instructions
           echo "<h3>Please Enter the Popcorn bag Size:</h3>";
         ?>
-          
+        
         <form method="post">
           <!-- Drop Down Menu (For Popcorn Bag Size) -->
           <label for="size">Size:</label>
@@ -116,12 +120,13 @@
           </select>
 
           <br><br>
-        <!-- Drop Down Menu (for Popcorn Flavour) -->
+        
           <?php 
+            // Instructions
             echo "<h3>Pick the flavour for your popcorn!</h3>";
           ?>
-    
 
+          <!-- Drop Down Menu (for Popcorn Flavour) -->
           <label for="flavour">Flavour:</label>
           <select name="flavour" id="flavour">
             <option value="Plain">Plain</option>
@@ -133,33 +138,36 @@
           </select>
 
           <br><br>
+        
+          <?php
+            // Instructions
+            echo "<h3>Enter what toppings you'd like!</h3>";
+          ?>
 
-        <!-- Checkboxes for toppings -->
-        <h3>Enter what toppings you'd like!</h3>
-
+          <!-- Checkboxes for toppings -->
           <table class="center">
             <tr>
               <td>
-                  <!-- Topping Checkbox - DILL PICKLE -->
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                    <span class="mdl-checkbox__label">Dill Pickle</span>
-                    <input type="checkbox" id="dill-pickle" name="topping" class="mdl-checkbox__input"><br><br>
-                  </label>&emsp;
-                  <!-- Topping Checkbox - KETCHUP -->
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                    <span class="mdl-checkbox__label">Ketchup</span>
-                    <input type="checkbox" id="ketchup" name="topping" class="mdl-checkbox__input"><br><br>
-                  </label>&emsp;
-                  <!-- Topping Checkbox - ALL DRESSED -->
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                    <span class="mdl-checkbox__label">All Dressed</span>
-                    <input type="checkbox" id="all-dressed" name="topping" class="mdl-checkbox__input"><br><br>
-                  </label>&emsp;
-                  <!-- Topping Checkbox - SWEET & SALTY -->
-                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                    <span class="mdl-checkbox__label">Sweet & Salty</span>
-                    <input type="checkbox" id="sweet-and-salty" name="topping" class="mdl-checkbox__input"><br><br>
-                  </label>&emsp;
+                <!-- Topping Checkbox - DILL PICKLE -->
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <span class="mdl-checkbox__label">Dill Pickle</span>
+                  <input type="checkbox" id="dill-pickle" name="topping" class="mdl-checkbox__input"><br><br>
+                </label>&emsp;
+                <!-- Topping Checkbox - KETCHUP -->
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <span class="mdl-checkbox__label">Ketchup</span>
+                  <input type="checkbox" id="ketchup" name="topping" class="mdl-checkbox__input"><br><br>
+                </label>&emsp;
+                <!-- Topping Checkbox - ALL DRESSED -->
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <span class="mdl-checkbox__label">All Dressed</span>
+                  <input type="checkbox" id="all-dressed" name="topping" class="mdl-checkbox__input"><br><br>
+                </label>&emsp;
+                <!-- Topping Checkbox - SWEET & SALTY -->
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                  <span class="mdl-checkbox__label">Sweet & Salty</span>
+                  <input type="checkbox" id="sweet-and-salty" name="topping" class="mdl-checkbox__input"><br><br>
+                </label>&emsp;
               </td>
             </tr>
           </table>
@@ -167,130 +175,141 @@
 
         <!-- Radio buttons to select side drink -->
           <?php
+            // Instructions
             echo "<h3>Enter what kind of drink you'd like!</h3>";
           ?>
           <!-- Radio button -->
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="none">
-            <!-- Option 0 -->
+            <!-- Option 0 (No Drink) -->
             <input type="radio" id="none" class="mdl-radio__button" name="drink" value="none" checked>
             <span class="mdl-radio__label">None</span>
           </label>&emsp;
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pepsi">
-            <!-- Option 1 -->
+            <!-- Option 1 (Pepsi) -->
             <input type="radio" id="pepsi" class="mdl-radio__button" name="drink" value="pepsi">
             <span class="mdl-radio__label">Pepsi</span>
           </label>&emsp;
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ginger-ale">
-            <!-- Option 2 -->
+            <!-- Option 2 (Ginger Ale) -->
             <input type="radio" id="ginger-ale" class="mdl-radio__button" name="drink" value="ginger-ale">
             <span class="mdl-radio__label">Ginger Ale</span>
           </label>&emsp;
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="nestea">
-            <!-- Option 3 -->
+            <!-- Option 3 (Nestea) -->
             <input type="radio" id="nestea" class="mdl-radio__button" name="drink" value="nestea">
             <span class="mdl-radio__label">Nestea (Iced Tea)</span>
           </label>&emsp;
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="magic-milk">
-            <!-- Option 4 -->
+            <!-- Option 4 (Van's Magic Milk) -->
             <input type="radio" id="magic-milk" class="mdl-radio__button" name="drink" value="magic-milk">
             <span class="mdl-radio__label">Van's Magic Milk</span>
           </label>&emsp;
           <br><br>
+          <!-- Submit Button -->
           <input type="submit" name="submit" value="Submit">
         </form>
         <br>
       
-		<!-- Takes in user's age and day of week and outputs back cost -->
-		<?php
-      // If Button clicked
-			if(isset($_POST['submit'])) {
-          // Constants
-          define("HST", 0.13);
-          define("TOPPING_COST", 3.99);
-          define("SMALL_COST", 5.79);
-          define("MEDIUM_COST", 7.99);
-          define("LARGE_COST", 10.59);
-          define("EXTRA_LARGE_COST", 14.59);
-          define("SODA_COST", 2.17);
-          define("MAGIC_MILK_COST", 15.99);
-          define("FLAVOURED_POPCORN_COST", 2.00);
-          define("PLAIN_POPCORN_COST", 1.00);
-          define("DELIVERY_COST", 4.50);
-
-          $sizeCost = 0;
-          $flavourCost = 0;
-          $numToppings = 0;
-          $drinkCost = 0;
-          
-          
-          // Variables
-          $size = $_POST['size'];
-          $flavour = $_POST['flavour'];
-
-          if(isset($_POST["dill-pickle"])) {
-            //++ adds one to the total
-            $numToppings++;
-          }
-          //if hummus is checked
-          if(isset($_POST["ketchup"])) {
-            $numToppings++;
-          }
-          //if garlic sauce is checked
-          if(isset($_POST["all-dressed"])) {
-            $numToppings++;
-          }
-          //if pickled turnips are checked
-          if(isset($_POST["sweet-and-salty"])) {
-            $numToppings++;
-          }
-
-          $costToppings = $numToppings * TOPPING_COST;
+    		<!-- Takes in user's choise of size, flavour, toppings, side drink and displays back the cost -->
+    		<?php
+          // If Button clicked
+    			if(isset($_POST['submit'])) {
+              
+              // Constants
+              define("HST", 0.13);
+              define("TOPPING_COST", 3.99);
+              define("SMALL_COST", 5.79);
+              define("MEDIUM_COST", 7.99);
+              define("LARGE_COST", 10.59);
+              define("EXTRA_LARGE_COST", 14.59);
+              define("SODA_COST", 2.17);
+              define("MAGIC_MILK_COST", 15.99);
+              define("FLAVOURED_POPCORN_COST", 2.00);
+              define("PLAIN_POPCORN_COST", 1.00);
+              define("DELIVERY_COST", 4.50);
     
-          $drink = $_POST['drink'];
+              // Initializes Variables
+              $sizeCost = 0;
+              $flavourCost = 0;
+              $numToppings = 0;
+              $drinkCost = 0;
+              
+              
+              // Variables (From user input)
+              $size = $_POST['size'];
+              $flavour = $_POST['flavour'];
+              $drink = $_POST['drink'];
+            
+              // If Dill Pickle is checked (adds to number of checkboxes checked)
+              if(isset($_POST["dill-pickle"])) {
+                $numToppings++;
+              }
+              // If Ketchup is checked (adds to number of checkboxes checked)
+              if(isset($_POST["ketchup"])) {
+                $numToppings++;
+              }
+              // If All Dressed is checked (adds to number of checkboxes checked)
+              if(isset($_POST["all-dressed"])) {
+                $numToppings++;
+              }
+              // If Sweet and Salty is checked (adds to number of checkboxes checked)
+              if(isset($_POST["sweet-and-salty"])) {
+                $numToppings++;
+              }
 
-          // IF user selected the Small Size
-          if ($size == "Small") {
-            $sizeCost = SMALL_COST;
-            // IF user selected the Medium Size
-          } elseif ($size == "Medium") {
-            $sizeCost = MEDIUM_COST;
-            // IF user selected the Large Size
-          } elseif ($size == "Large") {
-            $sizeCost = LARGE_COST;
-            // IF user selected the Extra Large Size
-          } else {
-            $sizeCost = EXTRA_LARGE_COST;
+              // Calculates cost of Toppings (if any checked off)
+              $costToppings = $numToppings * TOPPING_COST;
+    
+              // IF user selected the Small Size
+              if ($size == "Small") {
+                $sizeCost = SMALL_COST;
+                // IF user selected the Medium Size
+              } elseif ($size == "Medium") {
+                $sizeCost = MEDIUM_COST;
+                // IF user selected the Large Size
+              } elseif ($size == "Large") {
+                $sizeCost = LARGE_COST;
+                // IF user selected the Extra Large Size
+              } else {
+                $sizeCost = EXTRA_LARGE_COST;
+              }
+
+              // If user selected any flavoured popcorn option
+              if ($flavour == "Cheesy Dill" or $flavour == "Jalapeno Jack" or $flavour == "Salt and Vinegar"
+                  or $flavour == "Buttersalt" or $flavour == "Whalin' White Cheese") {
+                $flavourCost = FLAVOURED_POPCORN_COST;
+                // If the user chose the plain popcorn flavour
+              } else {
+                $flavourCost = PLAIN_POPCORN_COST;
+              }
+    
+              // Assigns cost of drink IF user selected pepsi, ginger ale or nestea
+              if ($drink == "pepsi" or $drink == "ginger-ale" or $drink == "nestea") {
+                $drinkCost = SODA_COST;
+                // Assigns cost of drink IF user selected Van's Magic Milk
+              } elseif ($drink == "magic-milk") {
+                $drinkCost = MAGIC_MILK_COST;
+                // If the user chose no side drink
+              } else {
+                $drinkCost = 0;
+              }
+
+              // Calculations for subtotal
+              $subtotal = $sizeCost + $costToppings + $drinkCost + $flavourCost;
+            
+              // Calculations for tax
+              $tax = $subtotal * HST;
+            
+              // Calculations for total
+              $total = $subtotal + $tax;
+
+              // Outputs the cost of user's order
+              echo "<h4>Your subtotal is $" . number_format($subtotal, 2) . "!</h4>";
+              echo "<h4>The tax is $" . number_format($tax, 2) . "!</h4>";
+              echo "<h4>Your total is $" . number_format($total, 2) . "!</h4>";
+            
           }
-
-          if ($flavour == "Cheesy Dill" or $flavour == "Jalapeno Jack" or $flavour == "Salt and Vinegar"
-              or $flavour == "Buttersalt" or $flavour == "Whalin' White Cheese") {
-            $flavourCost = FLAVOURED_POPCORN_COST;
-            // If the user chose the plain popcorn flavour
-          } else {
-            $flavourCost = PLAIN_POPCORN_COST;
-          }
-
-          // Assigns cost of drink IF user selected pepsi, ginger ale or nestea
-          if ($drink == "pepsi" or $drink == "ginger-ale" or $drink == "nestea") {
-            $drinkCost = SODA_COST;
-            // Assigns cost of drink IF user selected Van's Magic Milk
-          } elseif ($drink == "magic-milk") {
-            $drinkCost = MAGIC_MILK_COST;
-            // If the user chose no side drink
-          } else {
-            $drinkCost = 0;
-          }
-
-          $subtotal = $sizeCost + $costToppings + $drinkCost + $flavourCost;
-          $tax = $subtotal * HST;
-          $total = $subtotal + $tax;
-
-          echo "<h4>Your subtotal is $" . number_format($subtotal, 2) . "!</h4>";
-          echo "<h4>The tax is $" . number_format($tax, 2) . "!</h4>";
-          echo "<h4>Your total is $" . number_format($total, 2) . "!</h4>";
-        
-      }
-		?>
+    		?>
       </center>
     </div>
   </body>
